@@ -13,6 +13,7 @@ services:
   disk:
     name: data
     mountPath: /data
+  plan: free
   envVars:
   - key: MINIO_ROOT_USER
     generateValue: true
@@ -36,6 +37,7 @@ services:
   dockerContext: /
   dockerfilePath: ./Dockerfile
   autoDeploy: false
+  plan: free
   envVars:
   - key: PORT
     value: 10000
