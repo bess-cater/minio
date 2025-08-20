@@ -10,9 +10,11 @@ services:
   # web service
   # dockerCommand: minio server /data --address $HOST:$PORT
   autoDeploy: false
+  
   disk:
     name: data
     mountPath: /data
+    sizeGB: 1
   plan: free
   envVars:
   - key: MINIO_ROOT_USER
